@@ -2,7 +2,6 @@
 
 -- Create the vet_clinic database
 CREATE DATABASE vet_clinic;
-
 -- Create the animals' table
 CREATE TABLE animals (
   id INT PRIMARY KEY,
