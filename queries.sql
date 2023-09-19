@@ -51,4 +51,4 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
      UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
     COMMIT;
                                          ---------------Queries Changes-------------
-                                         
+    SELECT COUNT(*) AS animal_count FROM animals;                                    
