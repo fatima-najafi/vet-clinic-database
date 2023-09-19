@@ -9,7 +9,7 @@ SELECT * FROM animals WHERE neutered = true;
 SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
 
-           ---------------------------Change species and ROLLBAKC the CHANGES---------------------------------------
+                                            ---------------Change species and ROLLBAKC the CHANGES-------------------
      BEGIN;
      UPDATE animals
      SET species = 'unspecified'
@@ -18,8 +18,7 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
      ROLLBACK;
 
     SELECT *  FROM animals;
-
-            -------------------------- Update the table and Commit the transaction....................................ADD
+                                          --------- Update the table and Commit the transaction...........
     BEGIN;
     UPDATE animals
     SET species = 'digimon'
@@ -33,4 +32,5 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
      COMMIT;
 
      SELECT * FROM animals;
-     
+                                           ---------------DELETE  animals table and ROLLBACK---------
+    
