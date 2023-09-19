@@ -20,4 +20,8 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
     SELECT *  FROM animals;
 
             -------------------------- Update the table and Commit the transaction....................................ADD
-        
+    BEGIN;
+    UPDATE animals
+    SET species = 'digimon'
+    WHERE name LIKE '%mon';
+    SELECT * FROM animals WHERE name LIKE '%mon';
