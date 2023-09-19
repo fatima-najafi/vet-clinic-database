@@ -47,6 +47,6 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
      SAVEPOINT my_savepoint;
     UPDATE animals 
      SET weight_kg= weight_kg *-1;
-     ROLLBACK TO my_savepoint;
+    ROLLBACK TO my_savepoint;
      UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
      COMMIT;
