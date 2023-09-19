@@ -33,4 +33,11 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
 
      SELECT * FROM animals;
                                            ---------------DELETE  animals table and ROLLBACK---------
+    BEGIN;
+
+    DELETE FROM animals;
+
+    ROLLBACK;
+
+    SELECT * FROM animals;
     
