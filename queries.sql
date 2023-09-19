@@ -44,7 +44,7 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
                                           -------Set SAVEPOINT------
     BEGIN;
     DELETE FROM animals WHERE date_of_birth > '2022-01-01';
-    SAVEPOINT my_savepoint;
+     SAVEPOINT my_savepoint;
      UPDATE animals 
      SET weight_kg= weight_kg *-1;
      ROLLBACK TO my_savepoint;
