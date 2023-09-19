@@ -25,3 +25,12 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
     SET species = 'digimon'
     WHERE name LIKE '%mon';
     SELECT * FROM animals WHERE name LIKE '%mon';
+
+    UPDATE animals
+    SET species = 'pokemon'
+    WHERE species IS NULL;
+     SELECT * FROM animals WHERE species = 'pokemon'
+     COMMIT;
+
+     SELECT * FROM animals;
+     
