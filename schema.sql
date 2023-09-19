@@ -13,3 +13,5 @@ CREATE TABLE animals (
 );
 -- Modify your schema.sql file.
 --Add a column species of type string to your animals table.
+ALTER TABLE animals
+ADD COLUMN species VARCHAR(100)
