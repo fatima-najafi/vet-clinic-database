@@ -53,4 +53,7 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
                                          ---------------Queries Changes-------------
     SELECT COUNT(*) AS animal_count FROM animals;  
     SELECT COUNT(*) AS no_escape_count FROM animals WHERE escape_attempts = 0;
-    SELECT AVG(weight_kg) AS average_weight FROM animals;                                  
+    SELECT AVG(weight_kg) AS average_weight FROM animals; 
+    SELECT name, escape_attempts
+    FROM animals
+    WHERE escape_attempts = (SELECT MAX(escape_attempts) FROM animals);                                 
