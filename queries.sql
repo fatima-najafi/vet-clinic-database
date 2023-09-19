@@ -56,4 +56,7 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
     SELECT AVG(weight_kg) AS average_weight FROM animals; 
     SELECT name, escape_attempts
     FROM animals
-    WHERE escape_attempts = (SELECT MAX(escape_attempts) FROM animals);                                 
+    WHERE escape_attempts = (SELECT MAX(escape_attempts) FROM animals);  
+    SELECT species, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
+    FROM animals
+    GROUP BY species;                               
