@@ -79,10 +79,10 @@ FROM animals a
 JOIN species s ON a.species_id = s.id
 WHERE s.name = 'Pokemon';
 
--- -- List all owners and their animals, including those who don't own any animal.
--- SELECT o.full_name, COALESCE(a.name, 'No animal') AS animal
--- FROM owners o
--- LEFT JOIN animals a ON o.id = a.owner_id;
+-- List all owners and their animals, including those who don't own any animal.
+SELECT o.full_name, COALESCE(a.name, 'No animal') AS animal
+FROM owners o
+LEFT JOIN animals a ON o.id = a.owner_id;
 
 -- -- How many animals are there per species?
 -- SELECT s.name, COUNT(*) AS animal_count
