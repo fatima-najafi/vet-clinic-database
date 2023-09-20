@@ -31,3 +31,7 @@ ADD COLUMN species VARCHAR(100)
  -- Drop species COLUMN
   ALTER TABLE animals
   DROP COLUMN species;
+  -- Modify the animals table
+  ALTER TABLE animals
+  ADD COLUMN species_id INTEGER REFERENCES species(id),
+  ADD COLUMN owner_id INTEGER REFERENCES owners(id);
