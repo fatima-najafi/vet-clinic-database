@@ -17,6 +17,7 @@ VALUES
   (10,'Blossom', '1998-10-13', 3, TRUE, 17),
   (11,'Ditto', '2022-05-14', 4, TRUE, 22);
 
+
 --Insert the following data into the owners table:
 INSERT INTO owners (full_name, age) VALUES
   ('Sam Smith', 34),
