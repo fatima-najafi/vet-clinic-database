@@ -15,3 +15,5 @@ CREATE TABLE animals (
 --Add a column species of type string to your animals table.
 ALTER TABLE animals
 ADD COLUMN species VARCHAR(100)
+
+  --Create the owner TABLE
