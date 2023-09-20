@@ -27,3 +27,7 @@ ADD COLUMN species VARCHAR(100)
     id SERIAL PRIMARY KEY,
     name VARCHAR(100)
  );
+
+ -- Drop species COLUMN
+  ALTER TABLE animals
+  DROP COLUMN species;
