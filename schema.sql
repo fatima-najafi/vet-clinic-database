@@ -18,7 +18,12 @@ ADD COLUMN species VARCHAR(100)
 
   --Create the owner TABLE
   CREATE TABLE owners(
-  id INT PRIMARY KEY,
+  id SERIAL PRIMARY KEY,
   full_name VARCHAR(100),
   age INTEGER
   );
+--- Create species table
+ CREATE TABLE species(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100)
+ );
