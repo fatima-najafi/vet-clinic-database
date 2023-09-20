@@ -74,10 +74,10 @@ JOIN owners o ON a.owner_id = o.id
 WHERE o.full_name = 'Melody Pond';
 
 -- List of all animals that are pokemon (their species is Pokemon).
--- SELECT a.name
--- FROM animals a
--- JOIN species s ON a.species_id = s.id
--- WHERE s.name = 'Pokemon';
+SELECT a.name
+FROM animals a
+JOIN species s ON a.species_id = s.id
+WHERE s.name = 'Pokemon';
 
 -- -- List all owners and their animals, including those who don't own any animal.
 -- SELECT o.full_name, COALESCE(a.name, 'No animal') AS animal
