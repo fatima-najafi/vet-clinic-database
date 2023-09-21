@@ -70,8 +70,8 @@ Insert the data for visits:
 INSERT INTO visits (animal_id, vet_id, visit_date)
 VALUES ((SELECT id FROM animals WHERE name = 'Agumon'), (SELECT id FROM vets WHERE name = 'Vet William Tatcher'), '2020-05-24');
 
--- INSERT INTO visits (animal_id, vet_id, visit_date)
--- VALUES ((SELECT id FROM animals WHERE name = 'Agumon'), (SELECT id FROM vets WHERE name = 'Vet Stephanie Mendez'), '2020-07-22');
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES ((SELECT id FROM animals WHERE name = 'Agumon'), (SELECT id FROM vets WHERE name = 'Vet Stephanie Mendez'), '2020-07-22');
 
 -- INSERT INTO visits (animal_id, vet_id, visit_date)
 -- VALUES ((SELECT id FROM animals WHERE name = 'Gabumon'), (SELECT id FROM vets WHERE name = 'Vet Jack Harkness'), '2021-02-02');
