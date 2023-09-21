@@ -37,13 +37,13 @@ ADD COLUMN species VARCHAR(100)
   ADD COLUMN species_id INTEGER REFERENCES species(id),
   ADD COLUMN owner_id INTEGER REFERENCES owners(id);
 
---   -- Create the vets table
--- CREATE TABLE vets (
---   id SERIAL PRIMARY KEY,
---   name VARCHAR(100),
---   age INTEGER,
---   date_of_graduation DATE
--- );
+  -- Create the vets table
+CREATE TABLE vets (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  age INTEGER,
+  date_of_graduation DATE
+);
 
 -- -- Create the specializations join table
 -- CREATE TABLE specializations (
