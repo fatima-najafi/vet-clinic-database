@@ -150,15 +150,15 @@ GROUP BY a.name
 ORDER BY COUNT(*) DESC
 LIMIT 1;
 
--- -- Who was Maisy Smith's first visit?
--- SELECT v.name AS vet_name, vs.visit_date
--- FROM vets v
--- JOIN visits vs ON v.id = vs.vet_id
--- JOIN animals a ON vs.animal_id = a.id
--- JOIN owners o ON a.owner_id = o.id
--- WHERE o.full_name = 'Maisy Smith'
--- ORDER BY vs.visit_date ASC
--- LIMIT 1;
+-- Who was Maisy Smith's first visit?
+SELECT v.name AS vet_name, vs.visit_date
+FROM vets v
+JOIN visits vs ON v.id = vs.vet_id
+JOIN animals a ON vs.animal_id = a.id
+JOIN owners o ON a.owner_id = o.id
+WHERE o.full_name = 'Maisy Smith'
+ORDER BY vs.visit_date ASC
+LIMIT 1;
 
 -- -- Details for the most recent visit: animal information, vet information, and date of visit.
 -- SELECT a.name AS animal_name, vt.name AS vet_name, v.visit_date
