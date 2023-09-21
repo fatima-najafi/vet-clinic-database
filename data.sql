@@ -84,8 +84,8 @@ VALUES ((SELECT id FROM animals WHERE name = 'Pikachu'), (SELECT id FROM vets WH
 INSERT INTO visits (animal_id, vet_id, visit_date)
 VALUES ((SELECT id FROM animals WHERE name = 'Devimon'), (SELECT id FROM vets WHERE name = 'Vet Stephanie Mendez'), '2021-05-04');
 
--- INSERT INTO visits (animal_id, vet_id, visit_date)
--- VALUES ((SELECT id FROM animals WHERE name = 'Charmander'), (SELECT id FROM vets WHERE name = 'Vet Jack Harkness'), '2021-02-24');
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES ((SELECT id FROM animals WHERE name = 'Charmander'), (SELECT id FROM vets WHERE name = 'Vet Jack Harkness'), '2021-02-24');
 
 -- INSERT INTO visits (animal_id, vet_id, visit_date)
 -- VALUES ((SELECT id FROM animals WHERE name = 'Plantmon'), (SELECT id FROM vets WHERE name = 'Vet Maisy Smith'), '2019-12-21'),
