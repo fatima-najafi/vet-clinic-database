@@ -108,5 +108,5 @@ VALUES ((SELECT id FROM animals WHERE name = 'Boarmon'), (SELECT id FROM vets WH
 INSERT INTO visits (animal_id, vet_id, visit_date)
 VALUES ((SELECT id FROM animals WHERE name = 'Blossom'), (SELECT id FROM vets WHERE name = 'Vet Stephanie Mendez'), '2020-05-24');
 
--- INSERT INTO visits (animal_id, vet_id, visit_date)
--- VALUES ((SELECT id FROM animals WHERE name = 'Blossom'), (SELECT id FROM vets WHERE name = 'Vet William Tatcher'), '2021-01-11');
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES ((SELECT id FROM animals WHERE name = 'Blossom'), (SELECT id FROM vets WHERE name = 'Vet William Tatcher'), '2021-01-11');
