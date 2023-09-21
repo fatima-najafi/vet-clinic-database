@@ -160,13 +160,13 @@ WHERE o.full_name = 'Maisy Smith'
 ORDER BY vs.visit_date ASC
 LIMIT 1;
 
--- -- Details for the most recent visit: animal information, vet information, and date of visit.
--- SELECT a.name AS animal_name, vt.name AS vet_name, v.visit_date
--- FROM visits v
--- JOIN animals a ON v.animal_id = a.id
--- JOIN vets vt ON v.vet_id = vt.id
--- ORDER BY v.visit_date DESC
--- LIMIT 1;
+-- Details for the most recent visit: animal information, vet information, and date of visit.
+SELECT a.name AS animal_name, vt.name AS vet_name, v.visit_date
+FROM visits v
+JOIN animals a ON v.animal_id = a.id
+JOIN vets vt ON v.vet_id = vt.id
+ORDER BY v.visit_date DESC
+LIMIT 1;
 
 -- -- How many visits were with a vet that did not specialize in that animal's species?
 -- SELECT COUNT(*) AS num_visits
