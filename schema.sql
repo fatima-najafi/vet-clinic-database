@@ -45,12 +45,12 @@ CREATE TABLE vets (
   date_of_graduation DATE
 );
 
--- Create the specializations join table
--- CREATE TABLE specializations (
---   vet_id INTEGER REFERENCES vets(id),
---   species_id INTEGER REFERENCES species(id),
---   PRIMARY KEY (vet_id, species_id)
--- );
+--Create the specializations join table
+CREATE TABLE specializations (
+  vet_id INTEGER REFERENCES vets(id),
+  species_id INTEGER REFERENCES species(id),
+  PRIMARY KEY (vet_id, species_id)
+);
 
 -- -- Create the visits join table
 -- CREATE TABLE visits (
