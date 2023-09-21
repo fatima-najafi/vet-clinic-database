@@ -66,9 +66,9 @@ VALUES ((SELECT id FROM vets WHERE name = 'Vet Stephanie Mendez'), (SELECT id FR
 INSERT INTO specializations (vet_id, species_id)
 VALUES ((SELECT id FROM vets WHERE name = 'Vet Jack Harkness'), (SELECT id FROM species WHERE name = 'Digimon'));
 
--- Insert the data for visits:
--- INSERT INTO visits (animal_id, vet_id, visit_date)
--- VALUES ((SELECT id FROM animals WHERE name = 'Agumon'), (SELECT id FROM vets WHERE name = 'Vet William Tatcher'), '2020-05-24');
+Insert the data for visits:
+INSERT INTO visits (animal_id, vet_id, visit_date)
+VALUES ((SELECT id FROM animals WHERE name = 'Agumon'), (SELECT id FROM vets WHERE name = 'Vet William Tatcher'), '2020-05-24');
 
 -- INSERT INTO visits (animal_id, vet_id, visit_date)
 -- VALUES ((SELECT id FROM animals WHERE name = 'Agumon'), (SELECT id FROM vets WHERE name = 'Vet Stephanie Mendez'), '2020-07-22');
